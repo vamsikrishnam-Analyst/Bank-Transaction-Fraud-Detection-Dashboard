@@ -12,6 +12,9 @@ You can view or download the full Power BI dashboard (.pbix) here 👇
 To analyze and visualize fraud patterns in banking transactions — identifying risky account types, devices, genders, and geographies to help financial institutions detect and prevent fraud.
 
 ---
+## 📸 Dashboard Preview
+![Fraud Detection Dashboard](Dashboard_FDA.png)
+
 
 ## 🧠 Key Insights
 - 💰 **Total Transactions:** 200K+  
