@@ -1,51 +1,41 @@
-# 💳 Bank Transaction Fraud Detection Dashboard (Power BI)
+# 🏦 Bank Transaction Fraud Detection Dashboard (Power BI)
 
-**Author:** Vamsi Krishna Mulinti  
-**Tools Used:** Power BI Desktop · DAX · Data Modeling · Geospatial Analytics  
+<p align="center">
+  <img src="Dashboard_FDA.png" alt="Fraud Detection Dashboard" width="800"/>
+</p>
 
 ---
-### 📂 Download Power BI File
-You can view or download the full Power BI dashboard (.pbix) here 👇  
+
+### 👨‍💻 Author: [Vamsi Krishna Mulinti](https://www.linkedin.com/in/vamsi-krishna-mulinti)
+**Role:** Data Analyst | BI Developer | Data Visualization Expert  
+**Tools Used:** Power BI Desktop · DAX · Data Modeling · SQL · Geospatial Analytics · ETL  
+
+---
+
+## 📂 Download Power BI File
+You can **view or download** the full Power BI dashboard (.pbix) file here 👇  
 ➡️ [Click to Download Fraud Detection Dashboard (.pbix)](https://drive.google.com/uc?export=download&id=1mHpL06hhe7NjQZLQauD9BqUMH827D--H)
 
-## 🎯 Project Objective
-To analyze and visualize fraud patterns in banking transactions — identifying risky account types, devices, genders, and geographies to help financial institutions detect and prevent fraud.
-
 ---
-## 📸 Dashboard Preview
-![Fraud Detection Dashboard](Dashboard_FDA.png)
 
-
-## 🧠 Key Insights
-- 💰 **Total Transactions:** 200K+  
-- ⚠️ **Total Fraud Cases:** ~10K (≈ 5.04 %)  
-- 👤 **Gender Split:** Balanced male vs female fraud ratio.  
-- 🏦 **High-Risk Channels:** POS & Mobile App transactions show higher fraud frequency.  
-- 🌍 **Fraud Hotspots:** States such as Maharashtra & Bihar show denser clusters of fraud activity.  
-- 💵 **Average Account Balance:** ≈ 52.44 K  
+## 📊 Project Overview
+An interactive **Power BI dashboard** built to analyze fraudulent bank transactions by:
+- Tracking transaction volumes and fraud counts.  
+- Comparing fraud rates by **gender**, **account type**, and **device type**.  
+- Visualizing **fraud hotspots geographically** using Power BI Maps.  
+- Providing KPIs for **total transactions**, **fraud rate (%)**, and **average account balance**.
 
 ---
 
-## 📊 Dashboard Components
-1. **KPI Cards:** Total Transactions · Total Fraud Transactions · Fraud Rate (%) · Average Account Balance  
-2. **Donut Chart:** Fraud Distribution by Gender  
-3. **Stacked Bar Chart:** Fraud Count by Account Type & Device Type  
-4. **Gradient Bar Chart:** Transaction Value by State (Colored by Fraud Intensity)  
-5. **Map Visual:** Fraud Hotspots by City  
-6. **Interactive Slicers:** Account Type · Gender · State · Transaction Type  
+## 🚀 Key Insights
+- 📈 **Fraud Rate:** 5.04% overall (derived using DAX measure).  
+- 👩‍💼 **Gender Split:** Nearly equal fraud occurrence between males and females.  
+- 💳 **Device Trends:** Desktop and POS show higher fraud counts compared to mobile.  
+- 🌍 **Geospatial Insight:** Certain cities and states show fraud concentration clusters.  
 
 ---
 
-## 🧮 DAX Measures
+## 🧠 DAX Measures Used
 ```DAX
-Total Transactions =
-    COUNTROWS('Bank_Transaction_Fraud_Detection')
-
-Fraud Transactions =
-    CALCULATE(
-        COUNTROWS('Bank_Transaction_Fraud_Detection'),
-        'Bank_Transaction_Fraud_Detection'[Is_Fraud] = 1
-    )
-
-Fraud Percentage =
-    DIVIDE([Fraud Transactions], [Total Transactions], 0)
+Total Transactions = COUNTROWS('Bank_Transaction_Fraud_Detection')
+Fraud Transactions = CALCULATE(COUNTROWS('Bank_Transaction_Fraud_Detection'), 'Bank_Transaction_Fraud_
