@@ -1,7 +1,7 @@
 # 🏦 Bank Transaction Fraud Detection Dashboard (Power BI)
 
 <p align="center">
-  <img src="Dashboard_FDA.png" alt="Fraud Detection Dashboard" width="800"/>
+  <img src="Dashboard_FD" alt="Fraud Detection Dashboard" width="800"/>
 </p>
 
 ---
